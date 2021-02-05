@@ -2,7 +2,6 @@ HELP.md
 target/
 bin/
 .DS_Store
-/Users/pswaldia1/Documents/springblog/src/main/resources
 
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
