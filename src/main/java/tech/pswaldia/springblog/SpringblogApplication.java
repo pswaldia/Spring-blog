@@ -1,4 +1,4 @@
-package src.main.java.tech.pswaldia.springblog;
+package tech.pswaldia.springblog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

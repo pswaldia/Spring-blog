@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import tech.pswaldia.springblog.dtos.LoginRequest;
 import tech.pswaldia.springblog.dtos.RegisterRequest;
 import tech.pswaldia.springblog.services.AuthService;
 
@@ -32,5 +33,9 @@ public class AuthController {
 			logger.error("User already exists");
 			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
 		}
+	}
+	@PostMapping("/login")
+	public String login(@RequestBody LoginRequest loginRequest) {
+		return authService.login(loginRequest);
 	}
 }
